@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.jboss.jbossts:jbossjta:4.16.6.Final" type="repository">
+    <properties maven-id="org.jboss.jbossts:jbossjta:4.16.6.Final" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jbossts/jbossjta/4.16.6.Final/jbossjta-4.16.6.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

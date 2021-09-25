@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.transaction.jta.platform">JBossTS</property>
+        <property name="hibernate.ogm.mongodb.connection_timeout">1000</property>
+        <property name="hibernate.transaction.coordinator_class">jdbc</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.ogm.datastore.provider">mongodb</property>
+        <!-- <property name="hibernate.ogm.datastore.grid_dialect">org.hibernate.ogm.dialect.mongodb.MongoDBDialect</property> -->
+        <property name="hibernate.ogm.datastore.database">TicTacToe</property>
+        <property name="hibernate.ogm.datastore.create_database">true</property>
+        <property name="hibernate.ogm.datastore.host">127.0.0.1</property>
+        <property name="hibernate.ogm.datastore.port">27017</property>
+        <mapping class="database.GamesEntity" />
+        <mapping class="database.UserEntity" />
+        <mapping class="database.Move"/>
+    </session-factory>
+</hibernate-configuration>
